@@ -23,7 +23,7 @@ section {
   padding:15px;
 }
 
-article {
+section>div {
   position:relative;
   border:1px solid black;
 }
