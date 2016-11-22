@@ -11,7 +11,7 @@
   </head>
 <body>
 
-  <nav class="navbar navbar-default">
+  <nav id='top' class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -23,23 +23,67 @@
         </button>
         <a class="navbar-brand" href="#">Food,&nbsp;LLC</a>
       </div>
-      <ul id="menu" class="dropdown-menu col-xs-12">
-        <li class="text-center navbar-link"><a href='#'>Chicken</a></li>
-        <li class="text-center navbar-link"><a href='#'>Beef</a></li>
-        <li class="text-center navbar-link"><a href='#'>Sushi</a></li>
-      </ul>
-
+      <div class="dropdown">
+        <ul id="menu" class="dropdown-menu col-xs-12 ">
+          <li class="text-center navbar-link"><a href='#chicken' data-toggle="collapse" data-target="#menu">Chicken</a></li>
+          <li role="separator" class="divider"></li>
+          <li class="text-center navbar-link"><a href='#beef' data-toggle="collapse" data-target="#menu">Beef</a></li>
+          <li role="separator" class="divider"></li>
+          <li class="text-center  navbar-link"><a href='#sushi' data-toggle="collapse" data-target="#menu">Sushi</a></li>
+        </ul>
+      </div>
     </div><!-- /.container-fluid -->
   </nav>
-  <div class="container">
+  <div class="container-fluid">
     <h1 class="text-center">Our menu</h1>
-    <div id="main" class="col-xs-12">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <section>
+          <h3 id="chicken" class="text-center">Chicken</h3>
+          <p>(OPTIONAL, NOT GRADED) As in previous assignment, the rest of your site
+            is very simple. It consists of a page heading and 3 sections (all in one
+            row in the desktop view). Each section contains some text. You can make
+            it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid
+            out on the screen depends on the width of the browser window. (Hint: use
+            the Bootstrap Grid we discussed in Lecture 26 of Module 2 as well as
+            numerous lectures of Module 3, including Lecture 35.)
+          </p>
+          <a href='#top'>Back to top</a>
+        </section>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <section>
+          <h3 id="beef" class="text-center">Beef</h3>
+          <p>(OPTIONAL, NOT GRADED) As in previous assignment, the rest of your site
+            is very simple. It consists of a page heading and 3 sections (all in one
+            row in the desktop view). Each section contains some text. You can make
+            it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid
+            out on the screen depends on the width of the browser window. (Hint: use
+            the Bootstrap Grid we discussed in Lecture 26 of Module 2 as well as
+            numerous lectures of Module 3, including Lecture 35.)
+          </p>
+          <a href='#top'>Back to top</a>
+        </section>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <section>
+          <h3 id="sushi" class="text-center">Sushi</h3>
+          <p>(OPTIONAL, NOT GRADED) As in previous assignment, the rest of your site
+            is very simple. It consists of a page heading and 3 sections (all in one
+            row in the desktop view). Each section contains some text. You can make
+            it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid
+            out on the screen depends on the width of the browser window. (Hint: use
+            the Bootstrap Grid we discussed in Lecture 26 of Module 2 as well as
+            numerous lectures of Module 3, including Lecture 35.)
+          </p>
+          <a href='#top'>Back to top</a>
+        </section>
+      </div>
     </div>
   </div>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>
